@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+      type="text/css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+    <script defer src="script.js"></script>
+
+    <title>Entscheidungshelfer</title>
+  </head>
+
+  <body>
+      <h1 class="hidden">Entscheidungshelfer</h1>
+      <p class="hidden">
+        <br />
+        Dönerbude oder Supermarkt?
+        <br />
+        Leberkas oder Salat?
+        <br />
+        Aufs Klo gehen oder die Kollegen ärgern?
+        <br />
+        <br />
+        Diese Seite dient dazu, die wichtigen Entscheidungen zu erleichtern
+        und zu beschleunigen.
+        <br />
+        <br />
+        Einfach alle Optionen eintragen (oder leer lassen) und "entscheiden".
+      </p>
+
+      <form action="javascript:;" onsubmit="entscheiden()" id="entscheidung" class="hidden">
+        <table>
+          <tr>
+            <td>
+              <label for="option1">Option 1: </label>
+              <input type="text" name="option1" id="option1" value="" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="option2">Option 2: </label>
+              <input type="text" name="option2" id="option2" value="" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="option3">Option 3: </label>
+              <input type="text" name="option3" id="option3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="option4">Option 4: </label>
+              <input type="text" name="option4" id="option4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="option5">Option 5: </label>
+              <input type="text" name="option5" id="option5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit">Entscheiden!</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+  </body>
+</html>
